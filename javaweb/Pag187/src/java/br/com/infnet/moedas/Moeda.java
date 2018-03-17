@@ -12,6 +12,8 @@ public class Moeda {
 
     public void setReal(double real) {
         this.real = real;
+        this.dolar = real / 2;
+        this.euro = real / 3;
     }
 
     public double getDolar() {
@@ -20,6 +22,8 @@ public class Moeda {
 
     public void setDolar(double dolar) {
         this.dolar = dolar;
+        this.real = dolar * 2;
+        this.euro = this.real / 3;
     }
 
     public double getEuro() {
@@ -28,6 +32,8 @@ public class Moeda {
 
     public void setEuro(double euro) {
         this.euro = euro;
+        this.real = euro * 3;
+        this.dolar = real / 2;
     }
     
 }
