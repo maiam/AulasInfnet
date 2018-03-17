@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,8 +18,10 @@
             </select>
             <input type="submit" value="Converter" />
         </form>
+        <c:if test="${not empty moeda}">
         <h3>Real: ${moeda.real}</h3>
         <h3>Dolar: ${moeda.dolar}</h3>
         <h3>Euro: ${moeda.euro}</h3>
+        </c:if>
     </body>
 </html>
