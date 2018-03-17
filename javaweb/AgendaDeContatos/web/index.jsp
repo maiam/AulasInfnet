@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -56,8 +55,7 @@
                     </tbody>
                 </table>
             </form>
-            <div style="background-color: #eee; width: 100%">
-                
+            <div style="background-color: #eee; width: 100%"> 
                 <h3 class="mensagemErro"> > ${opera} ${erros}</h3>
             </div>
         </div>
